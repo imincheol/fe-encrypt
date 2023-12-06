@@ -5,21 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@esbuild-plugins/node-globals-polyfill':
-    specifier: ^0.2.3
-    version: 0.2.3(esbuild@0.19.8)
   '@types/node-rsa':
     specifier: ^1.1.4
     version: 1.1.4
-  buffer:
-    specifier: ^6.0.3
-    version: 6.0.3
-  constants:
-    specifier: ^0.0.2
-    version: 0.0.2
-  crypto:
-    specifier: ^1.0.1
-    version: 1.0.1
   node-rsa:
     specifier: ^1.1.1
     version: 1.1.1
@@ -295,14 +283,6 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
     dev: true
-
-  /@esbuild-plugins/node-globals-polyfill@0.2.3(esbuild@0.19.8):
-    resolution: {integrity: sha1-DkSXorU8npSF4Um8kt2yKEONa88=}
-    peerDependencies:
-      esbuild: '*'
-    dependencies:
-      esbuild: 0.19.8
-    dev: false
 
   /@esbuild/android-arm64@0.19.8:
     resolution: {integrity: sha1-+3EwEDg1ttQ+pJnD8wz7Ky7VhFY=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/@esbuild/android-arm64/-/android-arm64-0.19.8.tgz}
@@ -588,7 +568,7 @@ packages:
     dev: true
 
   /@rollup/plugin-inject@5.0.5:
-    resolution: {integrity: sha1-YW86c/4HV2X5HFvskBdmCL7Sd6M=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/@rollup/plugin-inject/-/plugin-inject-5.0.5.tgz}
+    resolution: {integrity: sha1-YW86c/4HV2X5HFvskBdmCL7Sd6M=}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
@@ -602,7 +582,7 @@ packages:
     dev: false
 
   /@rollup/pluginutils@5.1.0:
-    resolution: {integrity: sha1-flPt3Ix/SDpK0LlK+x9/X9PHceA=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/@rollup/pluginutils/-/pluginutils-5.1.0.tgz}
+    resolution: {integrity: sha1-flPt3Ix/SDpK0LlK+x9/X9PHceA=}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
@@ -733,7 +713,7 @@ packages:
     dev: true
 
   /@types/estree@1.0.5:
-    resolution: {integrity: sha1-ps4+VW4A/ZiV3Yct0XKtDUvWh/Q=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/@types/estree/-/estree-1.0.5.tgz}
+    resolution: {integrity: sha1-ps4+VW4A/ZiV3Yct0XKtDUvWh/Q=}
     dev: false
 
   /@types/json-schema@7.0.15:
@@ -1015,7 +995,7 @@ packages:
     dev: true
 
   /base64-js@1.5.1:
-    resolution: {integrity: sha1-GxtEAWClv3rUC2UPCVljSBkDkwo=}
+    resolution: {integrity: sha1-GxtEAWClv3rUC2UPCVljSBkDkwo=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/base64-js/-/base64-js-1.5.1.tgz}
     dev: false
 
   /bn.js@4.12.0:
@@ -1128,13 +1108,6 @@ packages:
       ieee754: 1.2.1
     dev: false
 
-  /buffer@6.0.3:
-    resolution: {integrity: sha1-Ks5XhFnMj74qcKqo9S7mO2p0xsY=}
-    dependencies:
-      base64-js: 1.5.1
-      ieee754: 1.2.1
-    dev: false
-
   /builtin-status-codes@3.0.0:
     resolution: {integrity: sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz}
     dev: false
@@ -1213,11 +1186,6 @@ packages:
     resolution: {integrity: sha1-wguW2MYXdIqvHBYCF2DNJ/y4y3U=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/constants-browserify/-/constants-browserify-1.0.0.tgz}
     dev: false
 
-  /constants@0.0.2:
-    resolution: {integrity: sha1-+XO887abZJOzs2RXIxJPurziUJQ=}
-    engines: {node: '>= 0.4'}
-    dev: false
-
   /convert-source-map@2.0.0:
     resolution: {integrity: sha1-S1YPZJ/E6RjdCrdc9JYei8iC2Co=}
     dev: true
@@ -1277,11 +1245,6 @@ packages:
       public-encrypt: 4.0.3
       randombytes: 2.1.0
       randomfill: 1.0.4
-    dev: false
-
-  /crypto@1.0.1:
-    resolution: {integrity: sha1-KvG3ytgXXSTIobB3glV5SiGAMDc=}
-    deprecated: This package is no longer supported. It's now a built-in Node module. If you've depended on crypto, you should switch to the one that's built-in.
     dev: false
 
   /csstype@3.1.2:
@@ -1522,7 +1485,7 @@ packages:
     dev: true
 
   /estree-walker@2.0.2:
-    resolution: {integrity: sha1-UvAQF4wqTBF6d1fP6UKtt9LaTKw=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/estree-walker/-/estree-walker-2.0.2.tgz}
+    resolution: {integrity: sha1-UvAQF4wqTBF6d1fP6UKtt9LaTKw=}
     dev: false
 
   /esutils@2.0.3:
@@ -1768,7 +1731,7 @@ packages:
     dev: false
 
   /ieee754@1.2.1:
-    resolution: {integrity: sha1-jrehCmP/8l0VpXsAFYbRd9Gw01I=}
+    resolution: {integrity: sha1-jrehCmP/8l0VpXsAFYbRd9Gw01I=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/ieee754/-/ieee754-1.2.1.tgz}
     dev: false
 
   /ignore@5.3.0:
@@ -1950,7 +1913,7 @@ packages:
     dev: true
 
   /magic-string@0.30.5:
-    resolution: {integrity: sha1-GZTZgL0ciDXcbnjbfL1K5PJHRvk=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/magic-string/-/magic-string-0.30.5.tgz}
+    resolution: {integrity: sha1-GZTZgL0ciDXcbnjbfL1K5PJHRvk=}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -2573,7 +2536,7 @@ packages:
     dev: false
 
   /vite-plugin-node-stdlib-browser@0.2.1(node-stdlib-browser@1.2.0)(vite@5.0.0):
-    resolution: {integrity: sha1-almLPh/s3mzavpyAopra7rxTRjs=, tarball: https://registry.navercorp.com:443/api/npm/npm-naver/vite-plugin-node-stdlib-browser/-/vite-plugin-node-stdlib-browser-0.2.1.tgz}
+    resolution: {integrity: sha1-almLPh/s3mzavpyAopra7rxTRjs=}
     peerDependencies:
       node-stdlib-browser: ^1.2.0
       vite: ^2.0.0 || ^3.0.0 || ^4.0.0
